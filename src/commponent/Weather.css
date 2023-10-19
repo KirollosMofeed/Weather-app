@@ -1,0 +1,174 @@
+.form-app {
+    margin: 5rem auto 0rem auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom , black ,rgba(0, 0, 0, 0.651));
+    color: rgba(255, 255, 255, 0.795);
+    width: 70%;
+    height: fit-content;
+    padding-bottom: 2.8rem;
+    overflow: hidden;
+    transition: 1.5s;
+}
+.form-app h1 {
+    margin-bottom: 2%;
+}
+.form-app p {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+}
+form {
+    width: 80%;
+    height: 13rem;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.city , .country {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 75%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(221, 133, 1, 0.877);
+    border-radius: 20px;
+}
+.city span , .country span {
+    font-size: 1.5rem;
+}
+label input{
+    outline: none;
+    width: 70%;
+    margin-top: -3px;
+    background-color: transparent;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.877);
+}
+label input:focus {
+    outline: none;
+    background-color: rgba(221, 133, 1, 0.877);
+    border-left: 1px solid rgba(0, 0, 0, 0.877);
+}
+button {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.795);
+    border-radius: 5px;
+    padding: 15px;
+    border: 2px solid rgba(221, 133, 1, 0.877);
+    background-color: transparent;
+    font-size: 1rem;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: rgba(221, 133, 1, 0.877);
+    box-shadow: 4px 3px 1px rgb(201 143 55 / 92%);
+    color: black;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.weather {
+    width: 65%;
+    height: fit-content;
+    
+}
+#hide {
+    display: none;
+}
+.temp {
+    color: rgba(255, 255, 255, 0.795);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.right-temp span{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.795);
+    display: block;
+}
+.right-temp div {
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 50px;
+    margin: -6px 0px;
+}
+.left-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-temp img {
+    width: 6rem;
+}
+/*****************************************/
+.other {
+    width: 100%;
+    height: fit-content;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    
+    justify-items: center;
+}
+.Hum {
+    background-color: rgba(0, 0, 0, 0.808);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.808);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 7rem;
+    height: 8rem;
+    border-radius: 10px;
+}
+.Hum img {
+    width: 45px;
+    height: 45px;
+}
+
+@media (min-width: 360px) and (max-width: 650px) {
+    form {
+        justify-content: space-evenly;
+        height: 23rem;
+    }
+    .inputs {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 70%;
+    }
+    .city , .country {
+        width: 80%;
+        height: 45%;
+    }
+    .right-temp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .other {
+        grid-template-columns: none ;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+    }
+}
+@media (min-width: 651px) and (max-width: 1000px) {
+    .other {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+}

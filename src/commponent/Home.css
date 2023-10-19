@@ -1,0 +1,121 @@
+.intro {
+    width: 100%;
+    height: fit-content;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: rgba(255, 255, 255, 0.897);
+    margin-top: 5%;
+}
+.right {
+    padding: 2% 0% 2% 6%;
+}
+.right p {
+    width: 70%;
+}
+.intro .right a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.897);
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.897);
+    transition: 0.3s;
+}
+.intro .right a:hover {
+    background-color: rgba(255, 255, 255, 0.897);
+    color: black;
+}
+.intro .left {
+    width: 35%;
+    height: 35%;
+    padding: 2% 6% 2% 0%;
+}
+.intro .left img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.temp {
+    width: 100%;
+    height: fit-content;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: rgba(255, 255, 255, 0.897);
+    margin-top: 8%;
+}
+.temp .left {
+    width: 40%;
+    height: 30%;
+    padding:  2% 6% 2% 0%;
+}
+.temp .left p {
+    width: 70%;
+}
+.temp img {
+    width: 33%;
+    padding: 2% 0% 2% 6%;
+}
+/*----------------------------------------------------------------------------------*/
+.hum {
+    background-image: url(../assets/eb1853bf-8feb-471a-8402-00bd5bf8b30f.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 17rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8%;
+    
+}
+.hum p{
+    width: 50%;
+}
+@media (min-width: 360px) and (max-width: 650px) {
+    .intro {
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 80%;
+        flex-direction: column;
+    }
+    .intro .left , .intro .right{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro .left {
+        width: 80%;
+        height: 50%;
+    }
+    /*-------------------------------------------------------*/
+    .temp {
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 80%;
+        flex-direction: column;
+    }
+    .temp .left ,.temp img {
+        margin: 0 auto;
+    }
+    .temp img {
+        width:  80%;
+    }
+    .temp .left {
+        width: 70%;
+    }
+    .temp .left p {
+        width: 100%;
+    }
+    
+}

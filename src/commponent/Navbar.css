@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 5rem;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.712);
+    z-index: 0;
+}
+.logo {
+    padding-left: 7%;
+    font-size: 2rem;
+}
+.links {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+.test {
+    display: none;
+    padding-right: 7%;
+}
+.test svg{
+    color: rgba(255, 255, 255, 0.712);
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.712);
+    border-radius: 5px;
+}
+.close {
+    display: none;
+}
+.open {
+    position: absolute;
+    border-radius: 10px;
+    right: 7%;
+    top: 4.1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 2px 1px 6px 2px #ffffffa8;
+}
+.open a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+.open::after {
+    content: " ";
+    z-index: 1000;
+    position: absolute;
+    top: -13%;
+    right: 8%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid black;
+}
+.open a{
+    padding: 1rem 0.5rem;
+}
+@media (min-width: 360px) and (max-width: 600px) {
+    .test {
+        display: inline-block;
+    }
+    .links a{
+        display: none;
+    }
+}
